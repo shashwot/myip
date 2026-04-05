@@ -11,7 +11,7 @@ A tiny, safe, and robust Rust tool that shows your public IPv4 address using [ip
 
 ```bash
 # Download the latest binary release (replace URL with actual release link)
-$ wget https://github.com/shashwot/myip/releases/download/v1.0.0/myip-linux-x86_64
+$ wget https://github.com/shashwot/myip/releases/download/v1.0.1/myip-linux-x86_64
 
 # Move the binary to /usr/bin (requires sudo)
 $ sudo mv myip /usr/bin/myip
@@ -23,5 +23,5 @@ $ myip
 
 Output 
 ```
-23.250.26.229
+23.250.26.229, FE80:0000:0000:0000:0202:B3FF:FE1E:8329
 ```
