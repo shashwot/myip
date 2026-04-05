@@ -56,9 +56,9 @@ jobs:
         if: contains(matrix.target, 'linux')
         run: cross build --release --target ${{ matrix.target }}
 
-      - name: Build (macOS / Windows native)
-        if: "!contains(matrix.target, 'linux')"
-        run: cargo build --release --target ${{ matrix.target }}
+      # - name: Build (macOS / Windows native)
+      #   if: "!contains(matrix.target, 'linux')"
+      #   run: cargo build --release --target ${{ matrix.target }}
 
       - name: Rename binary
         shell: bash
