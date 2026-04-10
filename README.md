@@ -9,34 +9,19 @@ A tiny, safe, and robust Rust tool that shows your public IPv4 address using [ip
 
 ## Quick start
 
-### MACOS
-```bash
-# Download the latest macOS binary (replace URL with actual release link). In case of x86_64, use myip-macos-x86_64
-$ curl -LO https://github.com/shashwot/myip/releases/download/v1.0.1/myip-macos-aarch64
-
-# Make it executable
-$ chmod +x myip-macos-aarch64
-
-# Move to a directory in your PATH, e.g., /usr/local/bin
-$ sudo mv myip-macos-aarch64 /usr/local/bin/myip
-
-# Verify installation
-$ myip
-```
-
 ### Linux
 ```bash
-# Download the latest Linux binary (replace URL with actual release link)
-$ wget https://github.com/shashwot/myip/releases/download/v1.0.1/myip-linux-x86_64
+$ wget -q https://github.com/shashwot/myip/releases/download/v1.0.1/myip-linux-x86_64 -O myip && chmod +x myip && sudo mv myip /usr/bin/myip && myip
+```
 
-# Make it executable
-$ chmod +x myip-linux-x86_64
+### MACOS Apple Silicon
+```bash
+$ curl -sL https://github.com/shashwot/myip/releases/download/v1.0.1/myip-macos-aarch64 -o myip && chmod +x myip && sudo mv myip /usr/local/bin/myip && myip
+```
 
-# Move to a directory in your PATH, e.g., /usr/bin
-$ sudo mv myip-linux-x86_64 /usr/bin/myip
-
-# Verify installation
-$ myip
+### MACOS Intel (x86_64)
+```bash
+$ curl -sL https://github.com/shashwot/myip/releases/download/v1.0.1/myip-macos-x86_64 -o myip && chmod +x myip && sudo mv myip /usr/local/bin/myip && myip
 ```
 
 ### Windows
